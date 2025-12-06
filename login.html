@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - فوتوهب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="auth-container">
+        <div class="auth-card fade-in">
+            <div class="card-header">
+                <div class="card-icon">
+                    <img src="%D8%A7%D9%84%D8%AA%D9%82%D8%A7%D8%B7.PNG" alt="foto" style="width: 90px; height: 90px;">
+                </div>
+                <h2 class="card-title">تسجيل الدخول</h2>
+                <p class="card-subtitle">أدخل بياناتك للمتابعة</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="example@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        class="form-input" 
+                        placeholder="••••••••"
+                        required
+                    >
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">تذكرني</label>
+                    </div>
+                    <a href="forgot-password.html" class="text-link" style="font-size: 0.9rem;">هل نسيت كلمة المرور؟</a>
+                </div>
+
+                <button style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;" type="submit" class="btn btn-primary btn-full">تسجيل الدخول</button>
+            </form>
+
+            <div class="text-center mt-3">
+                <p class="text-muted">
+                    ليس لديك حساباً؟ 
+                    <a href="account-type.html" class="text-link">أنشئ حساباً</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب مصور - فوتوهب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;">
+    <div class="auth-container">
+        <div class="auth-card fade-in" style="max-width: 600px;">
+            <div class="card-header">
+                <div class="card-icon">📷</div>
+                <h2 class="card-title">إنشاء حساب مصور</h2>
+                <p class="card-subtitle">انضم إلى مجتمعنا وأعرض موهبتك</p>
+            </div>
+
+            <form id="registerPhotographerForm">
+                <div class="form-group">
+                    <label for="fullname" class="form-label">الاسم الكامل</label>
+                    <input style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;"
+                        type="text" 
+                        id="fullname" 
+                        class="form-input" 
+                        placeholder="أدخل اسمك الكامل"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;"
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">رقم الهاتف</label>
+                    <input style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;"
+                        type="tel" 
+                        id="phone" 
+                        class="form-input" 
+                        placeholder="+966 55 123 4567"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;"
+                        type="password" 
+                        id="password" 
+                        class="form-input" 
+                        placeholder="••••••••"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty" class="form-label">التخصص</label>
+                    <input style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;"
+                        type="text" 
+                        id="specialty" 
+                        class="form-input" 
+                        placeholder="اذكر تخصصك"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="bio" class="form-label">نبذة عن المصور</label>
+                    <textarea style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;"
+                        id="bio" 
+                        class="form-textarea" 
+                        placeholder="أخبرنا عن أسلوبك وخبرتك ومشاريعك ..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">رفع ملف الأعمال</label>
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">☁️</div>
+                        <p class="upload-text">
+                            <strong>قم بتحميل أفضل لقطاتك</strong> أو قم بالسحب والإفلات
+                        </p>
+                        <p class="upload-hint">PNG, JPG, GIF حتى 10 ميجابايت</p>
+                        <input type="file" id="fileInput" style="display: none;" accept="image/*" multiple>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 24px;">
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                            <input type="checkbox" required style="width: 18px; height: 18px; cursor: pointer;">
+                            <span style="font-size: 14px;">
+                                بالتسجيل، أنت توافق على 
+                                <a href="terms.html" class="text-link">شروط الخدمة</a>
+                                و
+                                <a href="terms.html" class="text-link">سياسة الخصوصية</a>
+                            </span>
+                        </label>
+                    </div>
+
+                <button style="font-family: 'segoe UI', 'Traditional Arabic', sans-serif;" type="submit" class="btn btn-primary btn-full">إنشاء حساب</button>
+            </form>
+
+            <div class="text-center mt-3">
+                <p class="text-muted">
+                    هل لديك حساب بالفعل؟ 
+                    <a href="login.html" class="text-link">تسجيل الدخول</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
